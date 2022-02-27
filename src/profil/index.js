@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style.css" 
 import Navbar from '../navbar'
-import { Modal, Button } from "react-bootstrap";
+
 
 const Profil= () => {
     return (

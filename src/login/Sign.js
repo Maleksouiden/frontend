@@ -18,20 +18,7 @@ const Sign = () => {
     const [email, setEmail] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('')
     const [type, setType] = useState('');
-    useEffect(async () => {
-        const res = await axios({
-            url: 'http://localhost:3000/graphql',
-            method: 'post',
-            data: {
-                query: `
-                protected {
-                 _id
-                  }   `
-            }
-        })
-
-        console.log(res.data) ;
-    })
+    
         return (
             <>
 
