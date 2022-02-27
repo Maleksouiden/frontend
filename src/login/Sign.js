@@ -20,7 +20,7 @@ const Sign = () => {
     const [type, setType] = useState('');
     useEffect(async () => {
         const res = await axios({
-            url: 'https://localhost:3000/graphql',
+            url: 'http://localhost:3000/graphql',
             method: 'post',
             data: {
                 query: `
@@ -39,7 +39,7 @@ const Sign = () => {
                     <div className='contitem'><div id="main-wrapper" className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-10">
-                                <div className="card border-0">
+                                <div className="card ">
                                     <div className="card-body p-0">
                                         <div className="row no-gutters">
 
@@ -61,7 +61,7 @@ const Sign = () => {
                                                     </div>
 
                                                     <h6 className="h5 mb-0">Welcome !</h6>
-                                                    <p className="text-muted  ">Connect with Your Social Accounts.</p>
+                                                    <p className="  ">Connect with Your Social Accounts.</p>
 
 
 
@@ -103,14 +103,14 @@ const Sign = () => {
                                                             <div className="col-12 form-group mb-5">
                                                                 <label className=" mb-2">Account Type</label>
                                                                 <br />
-                                                                <input className="form-check-input" type="radio" name="radio1" id="flexRadioDefault1" />
-                                                                <label style={{ marginLeft: '5px' }} className="form-check-label" for="flexRadioDefault1">Default radio</label>
-
-                                                                <input style={{ marginLeft: '15px' }} className="form-check-input " type="radio" name="radio1" id="flexRadioDefault1" />
-                                                                <label style={{ marginLeft: '5px' }} className="form-check-label" for="flexRadioDefault1">Default radio</label>
-
-                                                                <input style={{ marginLeft: '15px' }} className="form-check-input  " type="radio" name="radio1" id="flexRadioDefault1" />
-                                                                <label style={{ marginLeft: '5px' }} className="form-check-label" for="flexRadioDefault1">Default radio</label>
+                                                                <select class="form-select form-selectmodif" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">Organisation</option>
+  <option value="2">Developper</option>
+  <option value="3">Simple User</option>
+</select>
+                                                                
+                                                       
                                                             </div>
 
 
@@ -128,7 +128,7 @@ const Sign = () => {
                                 </div>
 
 
-                                <p className="text-muted text-center mt-5 mb-0">Do you have an account? <Link to={'/Login'} className="text-primary ml-1 text-primaryx">Login</Link></p>
+                                <p className=" text-center mt-5 mb-0">Do you have an account? <Link to={'/Login'} className="text-primary ml-1 text-primaryx">Login</Link></p>
 
 
 

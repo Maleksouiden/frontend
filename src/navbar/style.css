@@ -132,7 +132,7 @@
       }
     
       .top-logo{
-        max-height:50px;
+        max-height: 75px;
       }
     @media only screen and (max-width: 1090px) {
     
@@ -272,4 +272,21 @@ float: right;
     }
     .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .btn-join:hover {
     color: none!important;
+}
+.formsxd{
+    background: #1a233a8c!important;
+    color: #bcd0f7!important;
+    border-radius: 15px!important;
+    width: 207px!important;
+}
+
+.searchcard{
+    position: fixed;
+    z-index: 999;
+    right: 326px;
+    top: 66px;
+}
+.cip{
+    border-bottom: 1px solid #bcd0f7;
+    padding: 7px;
 }

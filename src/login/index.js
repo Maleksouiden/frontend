@@ -1,7 +1,28 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import "./style.css" 
+import axios from 'axios'
+
+
 const Login= () => {
+    const [adress, setAdress] = useState('');
+    const [pasword, setPassword] = useState('');
+    useEffect(async () => {
+        const res = await axios({
+            url: 'http://localhost:3000/graphql',
+            method: 'post',
+            data: {
+                query: `
+                protected {
+                 _id
+                  }   `
+            }
+        })
+
+        console.log(res.data) ;
+    })
+    
+
     return (
         <> 
 
@@ -9,7 +30,7 @@ const Login= () => {
     <div className='contitem'><div id="main-wrapper" className="container">
     <div className="row justify-content-center">
         <div className="col-xl-10">
-            <div className="card border-0">
+            <div className="card ">
                 <div className="card-body p-0">
                     <div className="row no-gutters">
                         <div className="col-lg-6">
@@ -19,7 +40,7 @@ const Login= () => {
                                 </div>
 
                                 <h6 className="h5 mb-0">Welcome back!</h6>
-                                <p className="text-muted mt-2 mb-5">Connect with Your Social Accounts.</p>
+                                <p className=" mt-2 mb-5">Connect with Your Social Accounts.</p>
 
 
 
@@ -34,14 +55,15 @@ const Login= () => {
                                 <form>
                                     <div className="form-group topf">
                                         <label >Email address</label>
-                                        <input name='email' type="email" className="form-control" id="exampleInputEmail1"/>
+                            
+                                        <input  value={adress} onChange={(e) => setAdress(e.target.value)} name='email' type="email" className="form-control" id="exampleInputEmailx"/>
                                     </div>
                                     <div className="form-group mb-5">
                                         <label >Password</label>
-                                        <input name='psw' type="password" className="form-control" id="exampleInputPassword1"/>
+                                        <input  value={pasword} onChange={(e) => setPassword(e.target.value)} name='psw' type="password" className="form-control" id="exampleInputPasswordy"/>
                                     </div>
                                     <button type="submit" className="btn btn-theme">Login</button>
-                                    <a className="forgot-link float-right text-primary ">Forgot password?</a>
+                                    <a className="forgot-link float-right text-primary forgetpw" style={{color:''}}>Forgot password?</a>
                                 </form>
 
                             </div>
@@ -63,7 +85,7 @@ const Login= () => {
             </div>
         
 
-            <p className="text-muted text-center mt-5 mb-0">Don't have an account? <Link to='/sign' className="text-primary ml-1 text-primaryx">Register</Link></p>
+            <p className=" text-center mt-5 mb-0">Don't have an account? <Link to='/sign' className="text-primary ml-1 text-primaryx">Register</Link></p>
 
 {/* <Router>
 

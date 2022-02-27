@@ -34,22 +34,32 @@ const Navbar= () => {
             <a className="nav-link active" aria-current="page" href="#2">Nos Services</a>
             <a className="nav-link active" aria-current="page" href="#3">Nos Partenaires</a>
             <a className="nav-link active" aria-current="page" href="#4">Notre equipe</a>
-            <a className="nav-link active" aria-current="page" href="#5">Contactez-nous</a>
+            <Link to='./profil' className="nav-link active"  aria-current="page" >Profil</Link>
 
-            <Link to='./login/sign.js' className="nav-link active btn-join" aria-current="page" href="#6">  Join us </Link>
+            <Link to='./sign' className="nav-link active btn-join" aria-current="page" href="#6">  Join us </Link>
             <Link to='./login' className="nav-link active btn-join" aria-current="page" href="#7">Login</Link>
-           
+           <a className="nav-link active" aria-current="page">    <input type="search" class="form-control formsxd" /> </a> 
+           <a className="nav-link active" aria-current="page" style={{    marginLeft: '-61px', marginTop: '4px'}}>     <i class="fas fa-search searchmodif"></i></a>
+         
           </div>
         </div>
       </div>
     </nav>
   </div>
 
-
-
-
-
-
+<div className='searchcard'>
+  <div className="card">
+  <div className="card-body row">
+    <div className='col-12'>
+      <div className='cip' style={{width:'350px'}}>
+       <img src='https://bootdey.com/img/Content/avatar/avatar1.png' style={{maxWidth:'50px',borderRadius:'50%',marginBottom:'7px'}}/> 
+ <span style={{ fontSize: '1.3rem'}}>&nbsp; &nbsp; &nbsp;<span> Nom </span> / <span> Prenom </span> / </span> 
+ <p className='rating'> Rating : &nbsp;&nbsp; <i className="fas fa-star"></i> <span>7.3</span>/10</p> 
+ </div>
+    </div>
+  </div>
+</div>
+</div>
         
         
         </>
