@@ -1,0 +1,76 @@
+hr{
+
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgb(127 126 126);
+    
+    width: 44px;
+      margin: auto;
+      margin-top: -5px;margin-bottom: 65px;
+}
+
+
+
+.cardfront{
+    border: 2px solid black;
+    padding: 25px;
+    background: url(./image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardfront2{
+    border: 2px solid black;
+    padding: 25px;
+    background: url(./image/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardfront3{
+    border: 2px solid black;
+    padding: 25px;
+    background: url(./image/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardfront4{
+    border: 2px solid black;
+    padding: 25px;
+    background: url(./image/4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.card-modif{
+    border-radius: 13px;
+    min-height: 450px;
+    border: 1px solid gray;
+    opacity: .85;
+    transition: opacity .3s ease-in-out;
+    object-fit: cover;
+}
+
+
+.topmar{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.textincard{
+    color: #fff;
+    padding: 16px;
+    font-weight: bolder;
+    font-size: 1.6rem;
+ 
+    border-radius: 6px;
+}
+.titrequi {
+    font-weight: 700;
+    margin: 15px;
+    color: #00539cff;
+    text-align: center;
+    font-variant: small-caps;
+    
+    margin-top: 25px;
+    font-size: 3rem!important;
+}

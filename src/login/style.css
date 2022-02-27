@@ -1,0 +1,124 @@
+body{
+
+    background: #8b8b8b17;
+    background-repeat: no-repeat;
+}
+.contitem{
+    margin: 10% auto;
+    
+}
+.card{
+    box-shadow: 11px 9px 26px 18px #00000059;
+}
+.account-block {
+    padding: 0;
+    background-image: url(./image/bglogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.border-0 {
+    border: 1px solid gray!important;
+    border-radius: 10px;
+}
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #00539cff !important;
+}
+
+
+
+
+.btn-theme {
+    background-color: #00539cff;
+    border-color: #00539cff;
+    color: #fff;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 15px;
+}
+
+.text-primary {
+    color: #00539cff!important;
+}
+
+.socialmedia{
+    border: 1px solid #62c0cc;  text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    margin: 0 auto 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.allicon{
+    color: #00539cff;
+    font-size: 2rem;
+    margin: 10px;
+
+}
+.icons{
+    text-align: center;
+    display: block;
+    margin-bottom: 18px;
+    margin-top: 15px;
+}
+
+
+.fbicon{
+    color: #3b5998 ;
+    cursor: pointer;
+}
+
+.gmailicon{
+    color: #EA4335    ;
+    cursor: pointer;
+}
+
+
+  input:focus { 
+    outline: none !important;
+    border-color: #EA4335;
+    box-shadow: 0 0 10px #EA4335;
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #EA4335;
+    box-shadow: 0 0 10px #EA4335;
+}
+
+.linkicon{
+    color: #0e76a8;
+}
+
+.text-primaryx{
+color:#EA4335!important;
+}
+.topf{
+    margin-bottom: 17px;
+}
